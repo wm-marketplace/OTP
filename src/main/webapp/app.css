@@ -1,0 +1,143 @@
+.wm-app .auth-form {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.wm-app .auth-form .panel-body,
+.wm-app .auth-form .form-elements {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.wm-app .auth-form .otp-container {
+    text-align: center;
+    /*padding: 16px;*/
+}
+
+.wm-app .auth-form .otp-container .otp-label {
+    padding: 0 16px;
+    margin: 8px 0;
+}
+
+.wm-app .auth-form .otp-container .otp-form-container {
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wm-app .auth-form .otp-container .otp-resend-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.wm-app .auth-form .otp-container .otp-resend-container .otp-resend-label {
+    padding: 0;
+    margin: 0 4px;
+    opacity: 0.8;
+}
+
+.wm-app .auth-form .otp-container .otp-resend-container .otp-resend-button {
+    padding: 0;
+    margin: 0 4px;
+    height: auto;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.wm-app .auth-form .otp-container .otp-form-list-container {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 32px 0;
+}
+
+.wm-app .auth-form .otp-container .otp-form-list-container .form-group {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.wm-app .auth-form .otp-container:not(.mpin-container) .otp-form-list-container .form-control {
+    /*font-size: 16px;*/
+    padding: 0;
+    margin: 0 12px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none !important;
+    box-shadow: inset 0 0 0 16px #ebeaea;
+    transition: all 0.2s;
+}
+
+.wm-app .auth-form .otp-container .otp-form-list-container .form-control:focus {
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px #212121;
+}
+
+.wm-app .auth-form .otp-container:not(.mpin-container) .otp-form-list-container .form-control:not(:focus):valid {
+    transition-delay: 0.2s;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 12px #ebeaea, inset 0 0 0 16px #575757;
+    color: transparent;
+}
+
+.wm-app .auth-form .otp-container:not(.mpin-container) .otp-form-list-container.success .form-control:not(:focus) {
+    color: transparent;
+    box-shadow: inset 0 0 0 1px #1f7f28, inset 0 0 0 16px #eaf8eb;
+}
+
+.wm-app .auth-form .otp-container:not(.mpin-container) .otp-form-list-container.error .form-control:not(:focus) {
+    color: transparent;
+    box-shadow: inset 0 0 0 1px #E01010, inset 0 0 0 16px #FCECEC;
+}
+
+
+/*.wm-app .auth-form .OTP .otp-form-list-container .form-control.ng-invalid.ng-untouched,*/
+
+.wm-app .auth-form .otp-container .otp-form-list-container .form-control.ng-touched:not(.ng-invalid) {
+    background-size: 100% 2px, 100% 1px;
+}
+
+.wm-app .auth-form .otp-container:not(.mpin-container) .otp-form-list-container .form-control.ng-touched.ng-invalid {
+    border-width: 1px;
+}
+
+.wm-app .auth-form .otp-container.mpin-container .otp-form-list-container .form-control {
+    /*font-size: 23px;*/
+    width: 29px;
+    height: 29px;
+    margin: 0 8px;
+    box-shadow: none;
+    text-align: center;
+    border-color: #C2C2C2;
+    transition: all 0.2s;
+}
+
+.wm-app .auth-form .otp-container.mpin-container .otp-form-list-container .form-control:focus {
+    border-color: #212121;
+}
+
+.wm-app .auth-form .otp-container.mpin-container .otp-form-list-container .form-control:not(.show-password):not(:focus) {
+    transition-delay: 0.1s;
+    color: transparent;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.wm-app .auth-form .otp-container.mpin-container .otp-form-list-container.error .form-control:not(:focus) {
+    border-color: #E01010;
+    color: #E01010;
+}
+
+.wm-app .auth-form .otp-container.mpin-container .otp-form-list-container.error .form-control:not(.show-password):not(:focus) {
+    text-shadow: 0 0 8px rgba(224, 16, 16, 1);
+}
+
+.wm-app .auth-form .tpwd-container {
+    padding: 16px;
+}

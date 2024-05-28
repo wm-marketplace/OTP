@@ -1,0 +1,17 @@
+{
+  "messages" : {
+    "b_ResendOTP" : "Resend OTP",
+    "l_NotreceivedOTP" : "Not Received OTP"
+  },
+  "formats" : {
+    "date" : "MMM d, y",
+    "time" : "h:mm:ss a",
+    "currency" : "USD"
+  },
+  "files" : {
+    "angular" : "en",
+    "fullCalendar" : null,
+    "moment" : null
+  },
+  "prefabMessages" : { }
+}

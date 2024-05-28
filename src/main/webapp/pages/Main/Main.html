@@ -1,0 +1,53 @@
+<wm-prefab-container name="prefab_container1">
+    <wm-form errormessage="" captionposition="floating" title="" enctype="application/x-www-form-urlencoded" method="post" captionalign="left" name="stvInputCountForm1" tabindex="-1" class="auth-form" show="true">
+        <wm-layoutgrid columns="1" name="layoutgrid1">
+            <wm-gridrow name="gridrow1">
+                <wm-gridcolumn columnwidth="12" name="gridcolumn1">
+                    <wm-container name="OTPcontainer" show="true" class="otp-container" conditionalclass="bind:isviewbtn == true ? 'mpin-container':''">
+                        <wm-layoutgrid name="layoutgrid2" columns="1">
+                            <wm-gridrow name="gridrow5">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn7">
+                                    <wm-label name="label2" caption="bind:otpheaderlabel" class="otp-label"></wm-label>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow6">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn8">
+                                    <wm-container name="container4" class="otp-form-container">
+                                        <wm-container class="otp-form-list-container" name="container2" show="true">
+                                            <wm-form-field name="text1" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text1" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text2" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text2" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text3" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text3" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text4" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text4" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text5" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text5" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text6" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text6" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text7" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text7" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text8" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text8" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text9" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text9" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text10" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text10" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text11" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text11" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text12" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text12" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text13" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text13" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text14" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text14" placeholder="" required="true"></wm-form-field>
+                                            <wm-form-field name="text15" type="custom" widget="text" maxchars="1" autocomplete="false" inputtype="text" show="true" key="text15" placeholder="" required="true"></wm-form-field>
+                                        </wm-container>
+                                    </wm-container>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow7">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn9">
+                                    <wm-container name="container6" class="otp-resend-container" show="bind:!istohidethebelowtextlink">
+                                        <wm-label name="label2_1" caption="bind:belowboxeslefttext || appLocale.l_NotreceivedOTP" class="otp-resend-label"></wm-label>
+                                        <wm-button class="btn-link otp-resend-button" caption="bind:belowboxesrighttext || appLocale.b_ResendOTP" type="button" name="buttonResendOTP" on-click="buttonResendOTPClick($event, widget)" on-tap="buttonResendOTPTap($event, widget)"></wm-button>
+                                    </wm-container>
+                                </wm-gridcolumn>
+                            </wm-gridrow>
+                            <wm-gridrow name="gridrow8">
+                                <wm-gridcolumn columnwidth="12" name="gridcolumn10"></wm-gridcolumn>
+                            </wm-gridrow>
+                        </wm-layoutgrid>
+                    </wm-container>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+    </wm-form>
+</wm-prefab-container>

@@ -1,0 +1,95 @@
+{
+  "displayName" : "OTP",
+  "group" : "",
+  "iconUrl" : "/resources/images/imagelists/prefab-icon.png",
+  "resources" : {
+    "styles" : [ "/pages/Main/Main.css", "/app.css" ],
+    "scripts" : [ "/resources/js/OTPautotab.js" ]
+  },
+  "properties" : {
+    "otpboxes" : {
+      "type" : "number",
+      "displayName" : "Otp Boxes Count",
+      "description" : "Otpboxes",
+      "bindable" : "in-bound",
+      "value" : 4,
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "flowheaderdata" : {
+      "type" : "object",
+      "displayName" : "Flow Header Data",
+      "description" : "Here need to map the ‘ChannelContext’ dataset",
+      "bindable" : "in-bound",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "otpheaderlabel" : {
+      "type" : "string",
+      "displayName" : "OTP Header Label",
+      "description" : "OTP has been sent to the registered Mobile number <+91 99XX XXX X82>",
+      "bindable" : "in-bound",
+      "value" : "OTP has been sent to the registered Mobile number <+91 99XX XXX X82>",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "belowboxeslefttext" : {
+      "type" : "string",
+      "displayName" : "Below Boxes Left Text",
+      "description" : "Below Input Boxes Left Text",
+      "bindable" : "in-bound",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "belowboxesrighttext" : {
+      "type" : "string",
+      "displayName" : "Below Boxes Right Text",
+      "description" : "Below Input Boxes Right Text",
+      "bindable" : "in-bound",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "istohidethebelowtextlink" : {
+      "type" : "boolean",
+      "displayName" : "Is to hide the below text, link",
+      "description" : "Is to hide the input boxes below text, link",
+      "bindable" : "in-bound",
+      "value" : true,
+      "widget" : "checkbox",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    }
+  },
+  "events" : {
+    "onClickresendotp" : {
+      "description" : "Cliclresendotp",
+      "eventData" : "",
+      "displayName" : "Clickresendotp"
+    }
+  },
+  "methods" : {
+    "getEnteredValue" : {
+      "description" : "getEnteredValue",
+      "parameters" : [ ],
+      "returnType" : "any",
+      "example" : ""
+    },
+    "resetPrefabFields" : {
+      "description" : "Method  used to reset the formfeilds",
+      "parameters" : [ ],
+      "returnType" : "void",
+      "example" : ""
+    }
+  }
+}
